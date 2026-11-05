@@ -1,0 +1,14 @@
+import pandas as pd
+
+df = pd.read_csv("train.csv")
+
+fare = df["Fare"].dropna()
+
+print("Mean:", fare.mean())
+print("Median:", fare.median())
+print("Mode:", fare.mode()[0])
+print("Standard Deviation:", fare.std())
+
+IQR = fare.quantile(0.75) - fare.quantile(0.25)
+
+print("Interquartile Range:", IQR)

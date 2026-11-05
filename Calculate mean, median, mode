@@ -1,0 +1,17 @@
+import pandas as pd
+
+df = pd.read_csv("train.csv")
+
+data = df.select_dtypes(include="number")
+
+print("Mean:")
+print(data.mean())
+
+print("Median:")
+print(data.median())
+
+print("Mode:")
+print(data.mode().iloc[0])
+
+print("Standard Deviation:")
+print(data.std())

@@ -1,0 +1,7 @@
+import pandas as pd
+
+df = pd.read_csv("train.csv")
+
+table = pd.crosstab(df["Pclass"], df["Survived"])
+
+print(table)
