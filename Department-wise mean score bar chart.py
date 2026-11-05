@@ -1,0 +1,8 @@
+dept_average.plot(kind="bar", figsize=(7, 4), edgecolor="black")
+plt.title("Average Examination Score by Department")
+plt.xlabel("Department")
+plt.ylabel("Average exam score")
+plt.xticks(rotation=0)
+plt.grid(axis="y", alpha=0.3)
+plt.tight_layout()
+plt.show()
